@@ -71,7 +71,7 @@ Výstupní CSV soubor vypadá takto:
 598925,Albrechtice,3173,1957,1944,109,4,2,181,2,131,211,15,22,12,1,3,139,0,5,25,635,1,1,174,0,10,1,0,255,5
 599051,Bohumín,17613,9040,8973,579,12,4,1241,9,133,821,85,91,87,7,6,641,0,12,119,3157,18,33,305,3,55,14,25,1478,38
 
-<img src="ukazky/soubor_v_csv.png" alt="CSV" width="200"/>
+<img src="ukazky/soubor_v_csv.png" alt="CSV" width="300"/>
 
 
 Výstupní JSON soubor vypadá takto:
@@ -110,7 +110,7 @@ Výstupní XML soubor vypadá takto:
     <CESTA ODPOVĚDNÉ SPOLEČNOSTI>2</CESTA ODPOVĚDNÉ SPOLEČNOSTI>
 </obec>
 ```
-<img src="ukazky/soubor_v_xml.png" alt="XML" width="200"/>
+<img src="ukazky/soubor_v_xml.png" alt="XML" width="300"/>
 ---
 
 ## 📦 Závislosti
