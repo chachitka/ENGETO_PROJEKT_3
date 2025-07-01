@@ -1,4 +1,4 @@
-# 📊 Web Scraper pro získání volebních výsledků
+#  Web Scraper pro získání volebních výsledků
 
 Tento Pythonový skript slouží k automatizovanému stažení a zpracování volebních dat 
 ze zadané webové stránky 
@@ -10,8 +10,24 @@ datové zpracování a práci se soubory. Kód je přehledně rozdělen do modul
 a obsahuje rozšířené logování a ošetření výjimek.
 
 ---
+## Obsah:
 
-## 🔧 Hlavní funkce
+- [Hlavní funkce](#hlavní-funkce)
+- [Struktura projektu](#struktura-projektu)
+- [Jak spustit](#jak-spustit)
+- [Ukázka výstupu](#ukázka-výstupu)
+- [Závislosti](#závislosti)
+- [Uložené soubory](#uložené-soubory)
+- [Výstupní CSV soubor](#výstupní-csv-soubor)
+- [Výstupní JSON soubor](#výstupní-json-soubor)
+- [Výstupní XML soubor](#výstupní-xml-soubor)
+- [Ošetření chyb](#ošetření-chyb)
+- [Motivace a cíl](#motivace-a-cíl)
+- [Kontakt](#kontakt)
+
+---
+
+## Hlavní funkce
 - 📥 Stažení HTML obsahu z veřejných webových stránek
 - 🔍 Parsování obsahu pomocí knihovny BeautifulSoup
 - 🧹 Zpracování a extrakce relevantních údajů (např. výsledky voleb, počty hlasů)
@@ -20,7 +36,7 @@ a obsahuje rozšířené logování a ošetření výjimek.
 - 📝 Barevný výstup pro přehlednější CLI komunikaci
 - 🐍 Dobře strukturovaný kód vhodný pro rozšíření a testování
 
-## 🗂 Struktura projektu
+## Struktura projektu
 Projekt se skládá z následujících částí:
 - main.py – hlavní skript pro spuštění programu
 - ukazky/ – složka pro výstupní soubory
@@ -28,7 +44,7 @@ Projekt se skládá z následujících částí:
 
 ---
 
-## ▶️ Jak spustit
+## Jak spustit
 Doporučuji vytvořit si virtuální prostředí:
 ```bash
 python -m venv venv
@@ -52,7 +68,7 @@ python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumn
 
 ---
 
-## 💻 Ukázka výstupu
+## Ukázka výstupu
 
 Při běhu programu je uživatel informován o průběhu:
 ```
@@ -65,7 +81,7 @@ Při běhu programu je uživatel informován o průběhu:
 ```
  ![Ukázka běhu](ukazky/Ukazka%20prubehu.gif)
 
-Výstupní CSV soubor vypadá takto:
+### Výstupní CSV soubor
 
 Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,STAROSTOVÉ A NEZÁVISLÍ,Komunistická str.Čech a Moravy,Strana zelených,"ROZUMNÍ-stop migraci,diktát.EU",Strana svobodných občanů,Blok proti islam.-Obran.domova,Občanská demokratická aliance,Česká pirátská strana,Česká národní fronta,Referendum o Evropské unii,TOP 09,ANO 2011,Dobrá volba 2016,SPR-Republ.str.Čsl. M.Sládka,Křesť.demokr.unie-Čs.str.lid.,Česká strana národně sociální,REALISTÉ,SPORTOVCI,Dělnic.str.sociální spravedl.,Svob.a př.dem.-T.Okamura (SPD),Strana Práv Občanů
 598925,Albrechtice,3173,1957,1944,109,4,2,181,2,131,211,15,22,12,1,3,139,0,5,25,635,1,1,174,0,10,1,0,255,5
@@ -74,9 +90,10 @@ Výstupní CSV soubor vypadá takto:
 <p align="center">
   <img src="ukazky/soubor_v_csv.png" alt="CSV" width="450"/>
 </p>
+<p align="center"><em>Výsledky hlasování za okres Karviná z roku 2017</em></p>
 
 
-Výstupní JSON soubor vypadá takto:
+### Výstupní JSON soubor
 
 ```json
 [
@@ -96,8 +113,10 @@ Výstupní JSON soubor vypadá takto:
 <p align="center">
   <img src="ukazky/soubor_v_json.png" alt="JSON" width="200"/>
 </p>
+<p align="center"><em>Výsledky hlasování za okres Karviná z roku 2017</em></p>
 
-Výstupní XML soubor vypadá takto:
+
+### Výstupní XML soubor
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
@@ -116,9 +135,11 @@ Výstupní XML soubor vypadá takto:
 <p align="center">
   <img src="ukazky/soubor_v_xml.png" alt="XML" width="300"/>
 </p>
+<p align="center"><em>Výsledky hlasování za okres Karviná z roku 2017</em></p>
+
 ---
 
-## 📦 Závislosti
+## Závislosti
 Projekt využívá tyto externí knihovny:
 
 - requests
@@ -129,7 +150,7 @@ Všechny závislosti jsou uvedeny v requirements.txt.
 
 ---
 
-## 📁 Uložené soubory
+## Uložené soubory
 
 Výsledky se ukládají do výstupního souboru dle volby uživatele jako:
 - CSV soubor (např. vysledky.csv)
@@ -138,7 +159,7 @@ Výsledky se ukládají do výstupního souboru dle volby uživatele jako:
 
 ---
 
-## ❗ Ošetření chyb
+## Ošetření chyb
 Program zachytává tyto typy chyb:
 - Chyby při stahování stránky (např. špatná URL, timeout)
 - Chyby při parsování HTML (nevalidní struktura)
@@ -153,7 +174,7 @@ Používají se vlastní výjimky pro lepší správu chyb:
 
 ---
 
-## 🧠 Motivace a cíl
+## Motivace a cíl
 Tento projekt vznikl jako součást mého studia Pythonu. Cílem bylo:
 - Naučit se pracovat s reálnými daty z webu,
 - Získat praktické zkušenosti s knihovnami jako BeautifulSoup, requests,
@@ -162,7 +183,7 @@ Tento projekt vznikl jako součást mého studia Pythonu. Cílem bylo:
 
 ---
 
-## 📬 Kontakt
+## Kontakt
 Pokud máš otázky nebo zpětnou vazbu:
 📧 l.krcmarikova@seznam.cz 
 
