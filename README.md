@@ -1,4 +1,4 @@
-#  Web Scraper pro získání volebních výsledků
+# 📊 Web Scraper pro získání volebních výsledků
 
 Tento Pythonový skript slouží k automatizovanému stažení a zpracování volebních dat 
 ze zadané webové stránky 
@@ -16,11 +16,11 @@ a obsahuje rozšířené logování a ošetření výjimek.
 - [Struktura projektu](#struktura-projektu)
 - [Jak spustit](#jak-spustit)
 - [Ukázka výstupu](#ukázka-výstupu)
-- [Závislosti](#závislosti)
-- [Uložené soubory](#uložené-soubory)
 - [Výstupní CSV soubor](#výstupní-csv-soubor)
 - [Výstupní JSON soubor](#výstupní-json-soubor)
 - [Výstupní XML soubor](#výstupní-xml-soubor)
+- [Závislosti](#závislosti)
+- [Uložené soubory](#uložené-soubory)
 - [Ošetření chyb](#ošetření-chyb)
 - [Motivace a cíl](#motivace-a-cíl)
 - [Kontakt](#kontakt)
@@ -81,6 +81,7 @@ Při běhu programu je uživatel informován o průběhu:
 ```
  ![Ukázka běhu](ukazky/Ukazka%20prubehu.gif)
 
+---
 ### Výstupní CSV soubor
 
 Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,STAROSTOVÉ A NEZÁVISLÍ,Komunistická str.Čech a Moravy,Strana zelených,"ROZUMNÍ-stop migraci,diktát.EU",Strana svobodných občanů,Blok proti islam.-Obran.domova,Občanská demokratická aliance,Česká pirátská strana,Česká národní fronta,Referendum o Evropské unii,TOP 09,ANO 2011,Dobrá volba 2016,SPR-Republ.str.Čsl. M.Sládka,Křesť.demokr.unie-Čs.str.lid.,Česká strana národně sociální,REALISTÉ,SPORTOVCI,Dělnic.str.sociální spravedl.,Svob.a př.dem.-T.Okamura (SPD),Strana Práv Občanů
@@ -156,6 +157,7 @@ Výsledky se ukládají do výstupního souboru dle volby uživatele jako:
 - CSV soubor (např. vysledky.csv)
 - JSON soubor (např. vysledky.json)
 - XML souboru (např. výsledky.xml)
+
 
 ---
 
