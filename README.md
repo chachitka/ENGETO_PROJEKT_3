@@ -191,7 +191,44 @@ Používají se vlastní výjimky pro lepší správu chyb:
 - NoDataFoundError při nenalezení žádných dat,
 - UnsupportedFormatError při zadání chybného formátu souboru.
 
+### Logování
+Program při prvním spuštění automaticky vytváří složku log a v ní soubor volby_scraper.log. 
+Do tohoto souboru jsou zaznamenávány všechny důležité události, včetně informací o průběhu 
+zpracování, chyb, výjimek a dalších důležitých zpráv. 
+Tento log umožňuje snadnou diagnostiku problémů, sledování průběhu programu a ladění.
+
+Log obsahuje například:
+
+- Zprávy o validaci URL a načítání dat,
+- Detaily o zpracování jednotlivých obcí,
+- Chybové hlášky při selhání stahování, parsování nebo zápisu
+- Informace o úspěšném uložením dat
+
+Díky tomu můžeš snadno zjistit, kde došlo k problému, nebo sledovat, jak program zpracovává data.
+
+<p align="center">
+  <img src="ukazky/log_info.png" alt="INFO" width="300"/>
+</p>
+<p align="center" style="font-size:small; margin-top:4px">
+  <em>Ukázka informace o průběhu zpracování</em>
+</p>
+
+<p align="center">
+  <img src="ukazky/log_debug.png" alt="DEBUG" width="300"/>
+</p>
+<p align="center" style="font-size:small; margin-top:4px">
+  <em>Ukázka o podrobnějším průběhu zpracování</em>
+</p>
+
+<p align="center">
+  <img src="ukazky/log_error.png" alt="ERROR" width="300"/>
+</p>
+<p align="center" style="font-size:small; margin-top:4px">
+  <em>Ukázka o chybném průběhu zpracování</em>
+</p>
+
 ---
+
 
 ## Motivace a cíl
 Tento projekt vznikl jako součást mého studia Pythonu. Cílem bylo:
