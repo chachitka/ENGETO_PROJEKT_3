@@ -79,7 +79,6 @@ Při běhu programu je uživatel informován o průběhu:
 💾 Ukládám výsledky do souboru 'karvina.csv' ve formátu CSV...
 ✅ HOTOVO! Výsledky byly úspěšně uloženy do 'karvina.csv'.
 ```
- ![Ukázka běhu](ukazky/Ukazka%20prubehu.gif)
 
  <p align="center">
   <img src="ukazky/Ukazka%20prubehu.gif" alt="CSV" width="500/>
