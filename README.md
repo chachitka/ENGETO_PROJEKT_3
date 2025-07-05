@@ -28,13 +28,13 @@ a obsahuje rozšířené logování a ošetření výjimek.
 ---
 
 ## Hlavní funkce
-- 📥 Stažení HTML obsahu z veřejných webových stránek
-- 🔍 Parsování obsahu pomocí knihovny BeautifulSoup
-- 🧹 Zpracování a extrakce relevantních údajů (např. výsledky voleb, počty hlasů)
-- 💾 Uložení výstupu do formátu JSON nebo CSV
-- 🛡 Robustní ošetření chyb a výjimek (včetně vlastních výjimek)
-- 📝 Barevný výstup pro přehlednější CLI komunikaci
-- 🐍 Dobře strukturovaný kód vhodný pro rozšíření a testování
+- Stažení HTML obsahu z veřejných webových stránek
+- Parsování obsahu pomocí knihovny BeautifulSoup
+- Zpracování a extrakce relevantních údajů (např. výsledky voleb, počty hlasů)
+- Uložení výstupu do formátu JSON nebo CSV
+- Robustní ošetření chyb a výjimek (včetně vlastních výjimek)
+- Barevný výstup pro přehlednější CLI komunikaci
+- Dobře strukturovaný kód vhodný pro rozšíření a testování
 
 ## Struktura projektu
 Projekt se skládá z následujících částí:
