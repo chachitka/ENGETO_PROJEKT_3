@@ -39,7 +39,6 @@ a obsahuje rozšířené logování a ošetření výjimek.
 ## Struktura projektu
 Projekt se skládá z následujících částí:
 - main.py – hlavní skript pro spuštění programu
-- ukazky/ – složka pro ukázkové výstupní soubory(CSV/JSON/XML)
 - requirements.txt – seznam potřebných knihoven
 
 ---
@@ -81,7 +80,7 @@ Při běhu programu je uživatel informován o průběhu:
 ```
 
  <p align="center">
-  <img src="ukazky/Ukazka%20prubehu.gif" alt="CSV" width="500/>
+  <img src="ukazky/Ukazka%20prubehu.gif" alt="CSV" width="500"/>
 </p>
 <p align="center" style="font-size:small; margin-top:4px">
   <em>Spouštění programu přes příkazovou řádku a jeho běh</em>
@@ -92,6 +91,7 @@ Při běhu programu je uživatel informován o průběhu:
 Jak vypadá CSV/JSON/XML výstup:
 
 ### Výstupní CSV soubor
+Zkrácená ukázka - celý výstup je v souboru karvina.csv 
 
 Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,
 598925,Albrechtice,3173,1957,1944,109,4,2,181,2,
@@ -106,6 +106,7 @@ Jak vypadá CSV/JSON/XML výstup:
 
 
 ### Výstupní JSON soubor
+Zkrácená ukázka - celý výstup je v souboru karvina.json
 
 ```json
 [
@@ -131,6 +132,7 @@ Jak vypadá CSV/JSON/XML výstup:
 
 
 ### Výstupní XML soubor
+Zkrácená ukázka - celý výstup je v souboru karvina.xml
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
