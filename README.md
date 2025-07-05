@@ -207,21 +207,21 @@ Log obsahuje například:
 Díky tomu můžeš snadno zjistit, kde došlo k problému, nebo sledovat, jak program zpracovává data.
 
 <p align="center">
-  <img src="ukazky/log_info.png" alt="INFO" width="300"/>
+  <img src="ukazky/log_info.png" alt="INFO" width="400"/>
 </p>
 <p align="center" style="font-size:small; margin-top:4px">
   <em>Ukázka informace o průběhu zpracování</em>
 </p>
 
 <p align="center">
-  <img src="ukazky/log_debug.png" alt="DEBUG" width="300"/>
+  <img src="ukazky/log_debug.png" alt="DEBUG" width="400"/>
 </p>
 <p align="center" style="font-size:small; margin-top:4px">
   <em>Ukázka o podrobnějším průběhu zpracování</em>
 </p>
 
 <p align="center">
-  <img src="ukazky/log_error.png" alt="ERROR" width="300"/>
+  <img src="ukazky/log_error.png" alt="ERROR" width="400"/>
 </p>
 <p align="center" style="font-size:small; margin-top:4px">
   <em>Ukázka o chybném průběhu zpracování</em>
