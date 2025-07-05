@@ -81,6 +81,13 @@ Při běhu programu je uživatel informován o průběhu:
 ```
  ![Ukázka běhu](ukazky/Ukazka%20prubehu.gif)
 
+ <p align="center">
+  <img src="ukazky/Ukazka%20prubehu.gif" alt="CSV" width="500/>
+</p>
+<p align="center" style="font-size:small; margin-top:4px">
+  <em>Spouštění programu přes příkazovou řádku a jeho běh</em>
+</p>
+
 ---
 ### Výstupní CSV soubor
 
