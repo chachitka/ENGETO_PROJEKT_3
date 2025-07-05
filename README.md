@@ -98,7 +98,7 @@ Zkrácená ukázka - celý výstup je v souboru karvina.csv
 599051,Bohumín,17613,9040,8973,579,12,4,1241,9,
 
 <p align="center">
-  <img src="ukazky/soubor_v_csv.png" alt="CSV" width="450"/>
+  <img src="ukazky/soubor_v_csv.png" alt="CSV" width="470"/>
 </p>
 <p align="center" style="font-size:small; margin-top:4px">
   <em>Výsledky hlasování za okres Karviná z roku 2017 v CSV formátu</em>
