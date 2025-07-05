@@ -80,7 +80,7 @@ Při běhu programu je uživatel informován o průběhu:
 ```
 
  <p align="center">
-  <img src="ukazky/Ukazka%20prubehu.gif" alt="CSV" width="500"/>
+  <img src="ukazky/Ukazka%20prubehu.gif" alt="CSV"/>
 </p>
 <p align="center" style="font-size:small; margin-top:4px">
   <em>Spouštění programu přes příkazovou řádku a jeho běh</em>
