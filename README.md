@@ -1,4 +1,4 @@
-# 📊 Web Scraper pro získání volebních výsledků
+# Web Scraper pro získání volebních výsledků
 
 Tento Pythonový skript slouží k automatizovanému stažení a zpracování volebních dat 
 ze zadané webové stránky 
@@ -84,14 +84,16 @@ Při běhu programu je uživatel informován o průběhu:
 ---
 ### Výstupní CSV soubor
 
-Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,STAROSTOVÉ A NEZÁVISLÍ,Komunistická str.Čech a Moravy,Strana zelených,"ROZUMNÍ-stop migraci,diktát.EU",Strana svobodných občanů,Blok proti islam.-Obran.domova,Občanská demokratická aliance,Česká pirátská strana,Česká národní fronta,Referendum o Evropské unii,TOP 09,ANO 2011,Dobrá volba 2016,SPR-Republ.str.Čsl. M.Sládka,Křesť.demokr.unie-Čs.str.lid.,Česká strana národně sociální,REALISTÉ,SPORTOVCI,Dělnic.str.sociální spravedl.,Svob.a př.dem.-T.Okamura (SPD),Strana Práv Občanů
-598925,Albrechtice,3173,1957,1944,109,4,2,181,2,131,211,15,22,12,1,3,139,0,5,25,635,1,1,174,0,10,1,0,255,5
-599051,Bohumín,17613,9040,8973,579,12,4,1241,9,133,821,85,91,87,7,6,641,0,12,119,3157,18,33,305,3,55,14,25,1478,38
+Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,
+598925,Albrechtice,3173,1957,1944,109,4,2,181,2,
+599051,Bohumín,17613,9040,8973,579,12,4,1241,9,
 
 <p align="center">
   <img src="ukazky/soubor_v_csv.png" alt="CSV" width="450"/>
 </p>
-<p align="center"><em>Výsledky hlasování za okres Karviná z roku 2017</em></p>
+<p align="center" style="font-size:small; margin-top:4px">
+  <em>Výsledky hlasování za okres Karviná z roku 2017 v CSV formátu</em>
+</p>
 
 
 ### Výstupní JSON soubor
@@ -114,7 +116,9 @@ Při běhu programu je uživatel informován o průběhu:
 <p align="center">
   <img src="ukazky/soubor_v_json.png" alt="JSON" width="200"/>
 </p>
-<p align="center"><em>Výsledky hlasování za okres Karviná z roku 2017</em></p>
+<p align="center"style="font-size:small; margin-top:4px">
+  <em>Výsledky hlasování za okres Karviná z roku 2017 v JSON formátu</em>
+</p>
 
 
 ### Výstupní XML soubor
@@ -136,7 +140,9 @@ Při běhu programu je uživatel informován o průběhu:
 <p align="center">
   <img src="ukazky/soubor_v_xml.png" alt="XML" width="300"/>
 </p>
-<p align="center"><em>Výsledky hlasování za okres Karviná z roku 2017</em></p>
+<p align="center" style="font-size:small; margin-top:4px">
+  <em>Výsledky hlasování za okres Karviná z roku 2017 v XML formátu</em>
+</p>
 
 ---
 
