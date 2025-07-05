@@ -39,7 +39,7 @@ a obsahuje rozšířené logování a ošetření výjimek.
 ## Struktura projektu
 Projekt se skládá z následujících částí:
 - main.py – hlavní skript pro spuštění programu
-- ukazky/ – složka pro výstupní soubory
+- ukazky/ – složka pro ukázkové výstupní soubory(CSV/JSON/XML)
 - requirements.txt – seznam potřebných knihoven
 
 ---
@@ -88,6 +88,9 @@ Při běhu programu je uživatel informován o průběhu:
 </p>
 
 ---
+
+Jak vypadá CSV/JSON/XML výstup:
+
 ### Výstupní CSV soubor
 
 Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,
