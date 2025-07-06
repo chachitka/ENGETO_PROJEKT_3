@@ -236,6 +236,8 @@ Pokud máš otázky nebo zpětnou vazbu:
 📧 l.krcmarikova@seznam.cz 
 
 ---
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+---
 
 📌 Poznámka:
 Tento skript není určen pro masové stahování dat. Prosím, respektuj pravidla webu, 
