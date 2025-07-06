@@ -57,16 +57,12 @@ Nainstaluj závislosti:
 pip install -r requirements.txt
 ```
 
-Spusť hlavní skript s URL a cílovým názvem souboru:
-
-  (soubor se automaticky uloží ve formátu podle volby)
+Spusť hlavní skript s URL a cílovým názvem souboru (soubor se automaticky uloží ve formátu podle volby):
 
 Příklad:
 ```bash
 python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8103" "karvina.csv"
 ```
-
-
 ---
 
 ## Ukázka výstupu
