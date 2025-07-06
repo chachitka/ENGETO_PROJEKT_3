@@ -48,7 +48,7 @@ Doporučuji vytvořit si virtuální prostředí:
 ```bash
 python -m venv venv
 
-source venv/bin/activate  # na UNIX
+$ source venv/bin/activate  # na UNIX
 
 \venv\Scripts\activate # na Windows
 ```
@@ -91,7 +91,7 @@ Při běhu programu je uživatel informován o průběhu:
 Jak vypadá CSV/JSON/XML výstup:
 
 ### Výstupní CSV soubor
-Zkrácená ukázka - celý výstup je v souboru karvina.csv 
+* Zkrácená ukázka - celý výstup je v souboru karvina.csv 
 
 Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,
 598925,Albrechtice,3173,1957,1944,109,4,2,181,2,
@@ -106,7 +106,7 @@ Zkrácená ukázka - celý výstup je v souboru karvina.csv
 
 
 ### Výstupní JSON soubor
-Zkrácená ukázka - celý výstup je v souboru karvina.json
+* Zkrácená ukázka - celý výstup je v souboru karvina.json
 
 ```json
 [
@@ -132,7 +132,7 @@ Zkrácená ukázka - celý výstup je v souboru karvina.json
 
 
 ### Výstupní XML soubor
-Zkrácená ukázka - celý výstup je v souboru karvina.xml
+* Zkrácená ukázka - celý výstup je v souboru karvina.xml
 
 ```
 <?xml version='1.0' encoding='utf-8'?>
@@ -180,10 +180,10 @@ Výsledky se ukládají do výstupního souboru dle volby uživatele jako:
 
 ## Ošetření chyb
 Program zachytává tyto typy chyb:
-- Chyby při stahování stránky (např. špatná URL, timeout)
-- Chyby při parsování HTML (nevalidní struktura)
-- Chyby při zápisu na disk (např. nemám oprávnění)
-- Nečekané chyby – jsou zalogovány a bezpečně ohlášeny uživateli a zároveň uložené do log souboru
+- Chyby při stahování stránky (např. špatná URL, timeout),
+- Chyby při parsování HTML (nevalidní struktura),
+- Chyby při zápisu na disk (např. nemám oprávnění),
+- Nečekané chyby – jsou zalogovány a bezpečně ohlášeny uživateli a zároveň uložené do log souboru.
 
 Používají se vlastní výjimky pro lepší správu chyb:
 - FileSavingError při ukládání,
