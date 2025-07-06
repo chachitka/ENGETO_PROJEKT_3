@@ -1,13 +1,9 @@
 # Web Scraper pro získání volebních výsledků
 
-Tento Pythonový skript slouží k automatizovanému stažení a zpracování volebních dat 
-ze zadané webové stránky 
-(například https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8103). 
-Pomocí knihovny BeautifulSoup provádí parsování HTML obsahu 
-a ukládá strukturovaná data do formátu JSON (případně CSV).
-Projekt je určen jako ukázka praktického použití Pythonu pro web scraping, 
-datové zpracování a práci se soubory. Kód je přehledně rozdělen do modulárních funkcí 
-a obsahuje rozšířené logování a ošetření výjimek.
+Tento Pythonový skript slouží k automatizovanému stažení a zpracování volebních dat ze zadané webové stránky (například https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8103).
+Pomocí knihovny BeautifulSoup provádí parsování HTML obsahu a ukládá strukturovaná data do formátu CSV (Comma-Separated Values, hodnoty oddělené čárkou), JSON (JavaScript Object Notation, lehce čitelný formát pro výměnu dat) nebo XML (eXtensible Markup Language, rozšiřitelný značkovací jazyk).  
+
+Projekt je určen jako ukázka praktického použití Pythonu pro web scraping (stahování dat z webu), datové zpracování a práci se soubory. Kód je přehledně rozdělen do modulárních funkcí a obsahuje rozšířené logování a ošetření výjimek.
 
 ---
 ## Obsah:
@@ -16,9 +12,9 @@ a obsahuje rozšířené logování a ošetření výjimek.
 - [Struktura projektu](#struktura-projektu)
 - [Jak spustit](#jak-spustit)
 - [Ukázka výstupu](#ukázka-výstupu)
-- [Výstupní CSV soubor](#výstupní-csv-soubor)
-- [Výstupní JSON soubor](#výstupní-json-soubor)
-- [Výstupní XML soubor](#výstupní-xml-soubor)
+- [Výstupní soubor ve formátu CSV](#výstupní-soubor-ve-formátu-csv)
+- [Výstupní soubor ve formátu JSON](#výstupní-soubor-ve-formátu-json)
+- [Výstupní soubor ve formátu XML](#výstupní-soubor-ve-formátu-xml)
 - [Závislosti](#závislosti)
 - [Uložené soubory](#uložené-soubory)
 - [Ošetření chyb](#ošetření-chyb)
@@ -31,7 +27,7 @@ a obsahuje rozšířené logování a ošetření výjimek.
 - Stažení HTML obsahu z veřejných webových stránek
 - Parsování obsahu pomocí knihovny BeautifulSoup
 - Zpracování a extrakce relevantních údajů (např. výsledky voleb, počty hlasů)
-- Uložení výstupu do formátu JSON nebo CSV
+- Uložení výstupu do souboru ve formátu CSV, JSON nebo XML
 - Robustní ošetření chyb a výjimek (včetně vlastních výjimek)
 - Barevný výstup pro přehlednější CLI komunikaci
 - Dobře strukturovaný kód vhodný pro rozšíření a testování
@@ -88,9 +84,9 @@ Při běhu programu je uživatel informován o průběhu:
 
 ---
 
-Jak vypadá CSV/JSON/XML výstup:
+Jak vypadá výstup ve formátu CSV/JSON/XML:
 
-### Výstupní CSV soubor
+### Výstupní soubor ve formátu CSV
 * Zkrácená ukázka - celý výstup je v souboru karvina.csv 
 
 Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,
@@ -105,7 +101,7 @@ Jak vypadá CSV/JSON/XML výstup:
 </p>
 
 
-### Výstupní JSON soubor
+### Výstupní soubor ve formátu JSON
 * Zkrácená ukázka - celý výstup je v souboru karvina.json
 
 ```json
@@ -131,7 +127,7 @@ Jak vypadá CSV/JSON/XML výstup:
 </p>
 
 
-### Výstupní XML soubor
+### Výstupní soubor ve formátu XML
 * Zkrácená ukázka - celý výstup je v souboru karvina.xml
 
 ```
@@ -173,7 +169,7 @@ Všechny závislosti jsou uvedeny v requirements.txt.
 Výsledky se ukládají do výstupního souboru dle volby uživatele jako:
 - CSV soubor (např. vysledky.csv)
 - JSON soubor (např. vysledky.json)
-- XML souboru (např. výsledky.xml)
+- XML soubor (např. výsledky.xml)
 
 
 ---
