@@ -58,13 +58,14 @@ pip install -r requirements.txt
 ```
 
 Spusť hlavní skript s URL a cílovým názvem souboru:
+(soubor se automaticky uloží ve formátu podle volby)
 
 Příklad:
 ```bash
 python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8103" "karvina.csv"
 ```
 
-(soubor se automaticky uloží ve formátu podle volby)
+
 ---
 
 ## Ukázka výstupu
@@ -237,7 +238,7 @@ Tento projekt vznikl v rámci studia Pythonu. Cíle byly:
 Pokud máš otázky nebo zpětnou vazbu:
 📧 l.krcmarikova@seznam.cz 
 
----
+---git add README.md
 
 📌 Poznámka:
 Tento skript není určen pro masové stahování dat. Prosím, respektuj pravidla webu, 
