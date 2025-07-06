@@ -89,7 +89,8 @@ Během běhu programu je uživatel informován o průběhu:
 
 Ukázka výstupních souborů:
 
-CSV (příklad)
+* CSV (příklad)
+
 Zkrácená ukázka, celý obsah najdete v souboru karvina.csv:
 
 Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,
@@ -104,7 +105,8 @@ Zkrácená ukázka, celý obsah najdete v souboru karvina.csv:
 </p>
 
 
-JSON (příklad)
+* JSON (příklad)
+
 Zkrácená ukázka, celý obsah najdete v souboru karvina.json:
 
 ```json
@@ -130,7 +132,8 @@ Zkrácená ukázka, celý obsah najdete v souboru karvina.json:
 </p>
 
 
-XML (příklad)
+* XML (příklad)
+
 Zkrácená ukázka, celý obsah najdete v souboru karvina.xml:
 ```
 <?xml version='1.0' encoding='utf-8'?>
@@ -170,9 +173,9 @@ Všechny závislosti jsou uvedeny v souboru requirements.txt.
 
 Výsledná data jsou uložena do souboru ve formátu dle volby uživatele:  
 
-CSV (například vysledky.csv)
-JSON (například vysledky.json)
-XML (například vysledky.xml)
+- CSV (například vysledky.csv),
+- JSON (například vysledky.json),
+- XML (například vysledky.xml).
 
 ---
 
