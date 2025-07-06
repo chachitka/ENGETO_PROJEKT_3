@@ -12,9 +12,7 @@ Projekt je určen jako ukázka praktického použití Pythonu pro web scraping (
 - [Struktura projektu](#struktura-projektu)
 - [Jak spustit](#jak-spustit)
 - [Ukázka výstupu](#ukázka-výstupu)
-- [Výstupní soubor ve formátu CSV](#výstupní-soubor-ve-formátu-csv)
-- [Výstupní soubor ve formátu JSON](#výstupní-soubor-ve-formátu-json)
-- [Výstupní soubor ve formátu XML](#výstupní-soubor-ve-formátu-xml)
+- [Výstupní soubory ve formátu CSV, JSON a XML](#výstupní-soubory-ve-formátu-csv-json-a-xml)
 - [Závislosti](#závislosti)
 - [Uložené soubory](#uložené-soubory)
 - [Ošetření chyb](#ošetření-chyb)
@@ -41,12 +39,15 @@ Projekt se skládá z následujících částí:
 
 ## Jak spustit
 Doporučuji vytvořit si virtuální prostředí:
+
 ```bash
 python -m venv venv
 
-$ source venv/bin/activate  # na UNIX
+# na UNIX/Linux
+source venv/bin/activate
 
-\venv\Scripts\activate # na Windows
+# na Windows
+venv\Scripts\activate 
 ```
 
 Nainstaluj závislosti:
@@ -54,18 +55,19 @@ Nainstaluj závislosti:
 pip install -r requirements.txt
 ```
 
-Spusť hlavní skript (přes příkazovou řádku):
+Spusť hlavní skript s URL a cílovým názvem souboru:
 
 Příklad:
 ```bash
 python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8103" "karvina.csv"
 ```
 
+(soubor se automaticky uloží ve formátu podle volby)
 ---
 
 ## Ukázka výstupu
 
-Při běhu programu je uživatel informován o průběhu:
+Během běhu programu je uživatel informován o průběhu: 
 ```
 🔍 Probíhá validace URL: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8103
 📋 Získávám seznam obcí z adresy...
@@ -83,11 +85,12 @@ Při běhu programu je uživatel informován o průběhu:
 </p>
 
 ---
+## Výstupní soubory ve formátu CSV, JSON a XML
 
-Jak vypadá výstup ve formátu CSV/JSON/XML:
+Ukázka výstupních souborů:
 
-### Výstupní soubor ve formátu CSV
-* Zkrácená ukázka - celý výstup je v souboru karvina.csv 
+CSV (příklad)
+Zkrácená ukázka, celý obsah najdete v souboru karvina.csv:
 
 Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,
 598925,Albrechtice,3173,1957,1944,109,4,2,181,2,
@@ -101,8 +104,8 @@ Jak vypadá výstup ve formátu CSV/JSON/XML:
 </p>
 
 
-### Výstupní soubor ve formátu JSON
-* Zkrácená ukázka - celý výstup je v souboru karvina.json
+JSON (příklad)
+Zkrácená ukázka, celý obsah najdete v souboru karvina.json:
 
 ```json
 [
@@ -127,9 +130,8 @@ Jak vypadá výstup ve formátu CSV/JSON/XML:
 </p>
 
 
-### Výstupní soubor ve formátu XML
-* Zkrácená ukázka - celý výstup je v souboru karvina.xml
-
+XML (příklad)
+Zkrácená ukázka, celý obsah najdete v souboru karvina.xml:
 ```
 <?xml version='1.0' encoding='utf-8'?>
 <vysledky>
@@ -154,53 +156,43 @@ Jak vypadá výstup ve formátu CSV/JSON/XML:
 ---
 
 ## Závislosti
-Projekt využívá tyto externí knihovny:
+Projekt využívá tyto knihovny: 
 
 - requests
 - beautifulsoup4
-- colorama (barevný výstup do terminálu)
+- colorama (barevný výstup v terminálu)
 
-Všechny závislosti jsou uvedeny v requirements.txt.
+Všechny závislosti jsou uvedeny v souboru requirements.txt.
 
 ---
 
 ## Uložené soubory
 
-Výsledky se ukládají do výstupního souboru dle volby uživatele jako:
-- CSV soubor (např. vysledky.csv)
-- JSON soubor (např. vysledky.json)
-- XML soubor (např. výsledky.xml)
+Výsledná data jsou uložena do souboru ve formátu dle volby uživatele:  
 
+CSV (například vysledky.csv)
+JSON (například vysledky.json)
+XML (například vysledky.xml)
 
 ---
 
 ## Ošetření chyb
-Program zachytává tyto typy chyb:
-- Chyby při stahování stránky (např. špatná URL, timeout),
-- Chyby při parsování HTML (nevalidní struktura),
-- Chyby při zápisu na disk (např. nemám oprávnění),
-- Nečekané chyby – jsou zalogovány a bezpečně ohlášeny uživateli a zároveň uložené do log souboru.
+Program zachytává následující chyby:  
 
-Používají se vlastní výjimky pro lepší správu chyb:
+- Chyby při stahování stránky (například špatná URL, timeout),
+- Chyby při parsování HTML (nevalidní struktura),
+- Chyby při zápisu na disk (například nedostatečná oprávnění),
+- Neočekávané chyby, které jsou zaznamenány do logu a uživateli sděleny.
+
+Používají se vlastní výjimky, například:  
+
 - FileSavingError při ukládání,
-- DataParsingError při parsování  HTML,
-- NoDataFoundError při nenalezení žádných dat,
-- UnsupportedFormatError při zadání chybného formátu souboru.
+- DataParsingError při parsování HTML,
+- NoDataFoundError při nenalezení dat,
+- UnsupportedFormatError při chybné volbě formátu.
 
 ### Logování
-Program při prvním spuštění automaticky vytváří složku log a v ní soubor volby_scraper.log. 
-Do tohoto souboru jsou zaznamenávány všechny důležité události, včetně informací o průběhu 
-zpracování, chyb, výjimek a dalších důležitých zpráv. 
-Tento log umožňuje snadnou diagnostiku problémů, sledování průběhu programu a ladění.
-
-Log obsahuje například:
-
-- Zprávy o validaci URL a načítání dat,
-- Detaily o zpracování jednotlivých obcí,
-- Chybové hlášky při selhání stahování, parsování nebo zápisu
-- Informace o úspěšném uložením dat
-
-Díky tomu můžeš snadno zjistit, kde došlo k problému, nebo sledovat, jak program zpracovává data.
+Logovací soubory jsou automaticky vytvářeny ve složce log s názvem volby_scraper.log. Do něj jsou zaznamenávány všechny důležité události, včetně chyb a průběhu zpracování, což usnadňuje diagnostiku a ladění.
 
 <p align="center">
   <img src="ukazky/log_info.png" alt="INFO" width="450"/>
@@ -227,11 +219,12 @@ Díky tomu můžeš snadno zjistit, kde došlo k problému, nebo sledovat, jak p
 
 
 ## Motivace a cíl
-Tento projekt vznikl jako součást mého studia Pythonu. Cílem bylo:
+Tento projekt vznikl v rámci studia Pythonu. Cíle byly:  
+
 - Naučit se pracovat s reálnými daty z webu,
-- Získat praktické zkušenosti s knihovnami jako BeautifulSoup, requests,
-- Vyzkoušet si psaní robustního a opakovaně použitelného kódu,
-- Zdokumentovat projekt pro prezentaci znalostí (např. při hledání zaměstnání).
+- Získat zkušenosti s knihovnami jako BeautifulSoup, requests,
+- Vyzkoušet psaní robustního a rozšiřitelného kódu,
+- Dokumentovat projekt pro prezentaci a budoucí využití.
 
 ---
 
