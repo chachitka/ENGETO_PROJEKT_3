@@ -24,6 +24,7 @@ Projekt je určen jako ukázka praktického použití Pythonu pro web scraping (
 ---
 
 ## Hlavní funkce
+
 - Stažení HTML obsahu z veřejných webových stránek
 - Parsování obsahu pomocí knihovny BeautifulSoup
 - Zpracování a extrakce relevantních údajů (např. výsledky voleb, počty hlasů)
@@ -33,13 +34,16 @@ Projekt je určen jako ukázka praktického použití Pythonu pro web scraping (
 - Dobře strukturovaný kód vhodný pro rozšíření a testování
 
 ## Struktura projektu
+
 Projekt se skládá z následujících částí:
+
 - main.py – hlavní skript pro spuštění programu
 - requirements.txt – seznam potřebných knihoven
 
 ---
 
 ## Jak spustit
+
 Doporučuji vytvořit si virtuální prostředí:
 
 ```bash
@@ -68,6 +72,7 @@ python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumn
 ## Ukázka výstupu
 
 Během běhu programu je uživatel informován o průběhu: 
+
 ```
 🔍 Probíhá validace URL: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8103
 📋 Získávám seznam obcí z adresy...
@@ -91,7 +96,7 @@ Ukázka výstupních souborů:
 
 * CSV (příklad)
 
-Zkrácená ukázka, celý obsah najdete v souboru karvina.csv:
+Zkrácená ukázka, celý obsah najdeš v souboru karvina.csv:
 
 Číslo obce,Název obce,Voliči,Vydané obálky,Platné hlasy,Občanská demokratická strana,Řád národa - Vlastenecká unie,CESTA ODPOVĚDNÉ SPOLEČNOSTI,Česká str.sociálně demokrat.,Radostné Česko,
 598925,Albrechtice,3173,1957,1944,109,4,2,181,2,
@@ -107,7 +112,7 @@ Zkrácená ukázka, celý obsah najdete v souboru karvina.csv:
 
 * JSON (příklad)
 
-Zkrácená ukázka, celý obsah najdete v souboru karvina.json:
+Zkrácená ukázka, celý obsah najdeš v souboru karvina.json:
 
 ```json
 [
@@ -134,7 +139,8 @@ Zkrácená ukázka, celý obsah najdete v souboru karvina.json:
 
 * XML (příklad)
 
-Zkrácená ukázka, celý obsah najdete v souboru karvina.xml:
+Zkrácená ukázka, celý obsah najdeš v souboru karvina.xml:
+
 ```
 <?xml version='1.0' encoding='utf-8'?>
 <vysledky>
@@ -159,6 +165,7 @@ Zkrácená ukázka, celý obsah najdete v souboru karvina.xml:
 ---
 
 ## Závislosti
+
 Projekt využívá tyto knihovny: 
 
 - requests
@@ -180,6 +187,7 @@ Výsledná data jsou uložena do souboru ve formátu dle volby uživatele:
 ---
 
 ## Ošetření chyb
+
 Program zachytává následující chyby:  
 
 - Chyby při stahování stránky (například špatná URL, timeout),
@@ -195,6 +203,7 @@ Používají se vlastní výjimky, například:
 - UnsupportedFormatError při chybné volbě formátu.
 
 ### Logování
+
 Logovací soubory jsou automaticky vytvářeny ve složce log s názvem volby_scraper.log. Do něj jsou zaznamenávány všechny důležité události, včetně chyb a průběhu zpracování, což usnadňuje diagnostiku a ladění.
 
 <p align="center">
@@ -222,6 +231,7 @@ Logovací soubory jsou automaticky vytvářeny ve složce log s názvem volby_sc
 
 
 ## Motivace a cíl
+
 Tento projekt vznikl v rámci studia Pythonu. Cíle byly:  
 
 - Naučit se pracovat s reálnými daty z webu,
@@ -232,10 +242,11 @@ Tento projekt vznikl v rámci studia Pythonu. Cíle byly:
 ---
 
 ## Kontakt
+
 Pokud máš otázky nebo zpětnou vazbu:
 📧 l.krcmarikova@seznam.cz 
 
----git add README.md
+---
 
 📌 Poznámka:
 Tento skript není určen pro masové stahování dat. Prosím, respektuj pravidla webu, 
