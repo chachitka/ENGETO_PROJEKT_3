@@ -58,7 +58,8 @@ pip install -r requirements.txt
 ```
 
 Spusť hlavní skript s URL a cílovým názvem souboru:
-(soubor se automaticky uloží ve formátu podle volby)
+
+  (soubor se automaticky uloží ve formátu podle volby)
 
 Příklad:
 ```bash
