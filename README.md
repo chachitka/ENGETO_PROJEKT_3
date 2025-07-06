@@ -1,5 +1,7 @@
 # Web Scraper pro získání volebních výsledků
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Tento Pythonový skript slouží k automatizovanému stažení a zpracování volebních dat ze zadané webové stránky (například https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=14&xnumnuts=8103).
 Pomocí knihovny BeautifulSoup provádí parsování HTML obsahu a ukládá strukturovaná data do formátu CSV (Comma-Separated Values, hodnoty oddělené čárkou), JSON (JavaScript Object Notation, lehce čitelný formát pro výměnu dat) nebo XML (eXtensible Markup Language, rozšiřitelný značkovací jazyk).  
 
@@ -236,11 +238,14 @@ Pokud máš otázky nebo zpětnou vazbu:
 📧 l.krcmarikova@seznam.cz 
 
 ---
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
----
 
 📌 Poznámka:
 Tento skript není určen pro masové stahování dat. Prosím, respektuj pravidla webu, 
 ze kterého data čerpáš (robots.txt, fair use).
+
+---
+Tento projekt je dostupný pod [MIT licencí](LICENSE).
+
+
 
 
